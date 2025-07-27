@@ -7,9 +7,9 @@ Along with an interactive website where users can easily choose their configurat
 
 ## Use Case Diagram (UC)
 
-![Use Case Diagram](diagrams/ucd1.png)
-![Use Case Diagram Registered User](diagrams/ucd2.png)
+![Use Case Diagram](ucd1.png)
+![Use Case Diagram Registered User](ucd2.png)
 
 ## Sequence Diagram (SD)
 
-![Sequence Diagram](diagrams/sd1.png)
+![Sequence Diagram](sd1.png)
