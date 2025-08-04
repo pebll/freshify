@@ -8,11 +8,23 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "$PROJECT_ROOT/lib/utils.sh"
 . "$PROJECT_ROOT/package_managers/homebrew.sh"
 . "$PROJECT_ROOT/lib/detect_os.sh"
-show_details=$(select_option "Do you want to see the detailed output of the commands?" "Yes" "No")
 
 # Detect OS
 OS=$(detect_os)
 
-echo "Detected OS: $OS"
+# Logo
+logo="
+⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣄⣀⣀⡀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⠶
+⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀
+⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀
+⢀⣠⠞⠋⠉⠛⠻⠿⣿⣿⣿⠿⠟⠋⠀⠀⠀⠀⠀
+⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+"
+echo "$GREEN $logo $NC"
+echo "$GREEN Welcome to Freshify, your $PURPLE$OS$NC$GREEN will config automatically $NC"
+
+show_details=$(select_option "Do you want to see the detailed output of the commands?" "Yes" "No")
+
 # Install essentials
 install_and_configure_homebrew $show_details
