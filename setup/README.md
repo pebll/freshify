@@ -21,6 +21,8 @@ Freshify/
 └── README.md            # Project documentation
 ```
 
+---
+
 ## How It Works
 
 - **install.sh**  
