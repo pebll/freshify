@@ -6,9 +6,7 @@ Freshify is a project designed to automate the installation and configuration of
 
 ## Project Structure
 
-<<<<<<< HEAD
 =======
-<<<<<<< HEAD
 Freshify/
 ├── install.sh # Main script that orchestrates the installation
 ├── uninstall.sh # Test script to uninstall packages
@@ -22,7 +20,6 @@ Freshify/
 ├── config/ # Configuration files to be copied to the user’s system
 └── README.md # Project documentation
 =======
->>>>>>> develop
 
 ```
 Freshify/
@@ -38,10 +35,17 @@ Freshify/
 ├── config/              # Configuration files to be copied to the user’s system
 └── README.md            # Project documentation
 ```
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
->>>>>>> ef3ddf0358492e8a6404d51b76e9ae21e22e909f
->>>>>>> develop
+
+> > > > > > > ef3ddf0358492e8a6404d51b76e9ae21e22e909f
+> > > > > > > develop
+> > > > > > > =======
+
+> > > > > > > ef3ddf0358492e8a6404d51b76e9ae21e22e909f
+> > > > > > > develop
 
 ---
 
