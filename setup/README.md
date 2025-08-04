@@ -6,18 +6,21 @@ Freshify is a project designed to automate the installation and configuration of
 
 ## Project Structure
 
+
+```
 Freshify/
-├── install.sh # Main script that orchestrates the installation
-├── uninstall.sh # Test script to uninstall packages
+├── install.sh           # Main script that orchestrates the installation
+├── uninstall.sh         # Test script to uninstall packages
 ├── packet_managers/
-│ └── homebrew.sh # Script to install Homebrew if not already present
+│   └── homebrew.sh      # Script to install Homebrew if not already present
 ├── lib/
-│ ├── color.sh # Functions to display colored messages in the terminal
-│ └── utils.sh # General reusable functions for scripts
+│   ├── color.sh         # Functions to display colored messages in the terminal
+│   └── utils.sh         # General reusable functions for scripts
 ├── shells/
-│ └── nu.sh # Script to install Nushell (modern shell)
-├── config/ # Configuration files to be copied to the user’s system
-└── README.md # Project documentation
+│   └── nu.sh            # Script to install Nushell (modern shell)
+├── config/              # Configuration files to be copied to the user’s system
+└── README.md            # Project documentation
+```
 
 ---
 
