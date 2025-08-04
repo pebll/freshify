@@ -8,7 +8,7 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "$PROJECT_ROOT/lib/utils.sh"
 . "$PROJECT_ROOT/package_managers/homebrew.sh"
 . "$PROJECT_ROOT/lib/detect_os.sh"
-show_details=$(select_option "¿Quieres ver la salida detallada de los comandos?" "Yes" "No")
+show_details=$(select_option "Do you want to see the detailed output of the commands?" "Yes" "No")
 
 # Detect OS
 OS=$(detect_os)
