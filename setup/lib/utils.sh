@@ -13,6 +13,20 @@ add_line_if_not_exists() {
   fi
 }
 
+spinner() {
+  local pid=$1
+  local delay=0.1
+  local spinstr='|/-\'
+  while kill -0 "$pid" 2>/dev/null; do
+    local temp=${spinstr#?}
+    printf " [%c]  " "$spinstr"
+    spinstr=$temp${spinstr%"$temp"}
+    sleep $delay
+    printf "\b\b\b\b\b\b"
+  done
+  printf "    \b\b\b\b"
+}
+
 run_command() {
   local command="$1"
   local verbose="$2"
@@ -20,7 +34,9 @@ run_command() {
   if [ "$verbose" = "Yes" ]; then
     eval "$command"
   else
-    eval "$command" &>/dev/null
+    eval "$command" &>/dev/null &
+    local cmd_pid=$!
+    spinner $cmd_pid
   fi
 }
 
