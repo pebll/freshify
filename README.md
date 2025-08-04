@@ -1,8 +1,8 @@
 # Freshify
+
 Freshify sets up a clean Linux enviromment to a full custom setup using configuration files. Create your own configuration and run Freshify on it!
 
-
-# What should I do? 
+# What should I do?
 
 - keybindings
 - bashrc & bashaliases
@@ -13,3 +13,7 @@ Freshify sets up a clean Linux enviromment to a full custom setup using configur
 - install software (mail client, matrix, firefox, mega...)
 - certificate folder somwhere for manual certs
 - ...?
+
+# Links
+
+- Miro: <https://miro.com/app/board/uXjVJaVBlW4=/>
