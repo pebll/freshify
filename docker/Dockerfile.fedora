@@ -1,0 +1,27 @@
+# Dockerfile.fedora
+FROM fedora:latest
+
+# Update package list and install common tools
+RUN dnf update -y && dnf install -y \
+    vim \
+    git \
+    curl \
+    wget \
+    sudo \
+    bash-completion \
+    && dnf clean all
+
+# Create a user (optional, but good practice)
+RUN useradd -m -s /bin/bash developer && \
+    echo 'developer ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
+# Set working directory
+WORKDIR /home/developer
+
+# Switch to developer user
+USER developer
+
+# Set up bash prompt and environment
+RUN echo 'export PS1="\[\033[01;32m\]\u@fedora-container\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "' >> ~/.bashrc
+
+CMD ["/bin/bash"]
