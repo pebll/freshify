@@ -12,6 +12,7 @@ Freshify sets up a clean Linux enviromment to a full custom setup using configur
 - python & pip
 - install software (mail client, matrix, firefox, mega...)
 - certificate folder somwhere for manual certs
+- ssh folder
 - ...?
 
 # Links
